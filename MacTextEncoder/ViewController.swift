@@ -14,9 +14,9 @@ class ViewController: NSViewController, NSComboBoxDelegate, NSTextFieldDelegate 
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        SourceEncodingComboBox.dataSource = self.dataSource
-        SourceEncodingComboBox.selectItem(at: self.dataSource.Encodings.firstIndex(of: String.Encoding.utf8.rawValue) ?? 0)
-        SourceEncodingComboBox.delegate = self
+        TargetEncodingComboBox.dataSource = self.dataSource
+        TargetEncodingComboBox.selectItem(at: self.dataSource.Encodings.firstIndex(of: String.Encoding.utf8.rawValue) ?? 0)
+        TargetEncodingComboBox.delegate = self
         SourceTextField.delegate = self
     }
 
@@ -35,17 +35,19 @@ class ViewController: NSViewController, NSComboBoxDelegate, NSTextFieldDelegate 
     }
 
     private func performTextConversion() {
-        let encoding = String.Encoding(rawValue: self.dataSource.Encodings[SourceEncodingComboBox.indexOfSelectedItem])
+        // Get unconverted bytes using Swift's internal encoding (currently UTF-8)
+        // (Can print individual bytes using indexer)
+        // Refer to https://swift.org/blog/utf8-string/
+        let sourceTextData = SourceTextField.stringValue.data(using: .utf8)!
+        let targetEncoding = String.Encoding(rawValue: self.dataSource.Encodings[TargetEncodingComboBox.indexOfSelectedItem])
 
-        if let data = SourceTextField.stringValue.data(using: encoding, allowLossyConversion: true) {
-            ResultTextField.stringValue = String(decoding: data, as: UTF8.self)
-        }
+        ResultTextField.stringValue = String(data: sourceTextData, encoding: targetEncoding) ?? ""
     }
 
     let dataSource = EncodingListDataSource(encodingListPointer: NSString.availableStringEncodings)
 
-    @IBOutlet weak var SourceEncodingComboBox: NSComboBox!
     @IBOutlet weak var SourceTextField: NSTextField!
+    @IBOutlet weak var TargetEncodingComboBox: NSComboBox!
     @IBOutlet weak var ResultTextField: NSTextField!
 }
 

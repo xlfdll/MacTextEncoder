@@ -309,11 +309,11 @@
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="MacTextEncoder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="120"/>
+                        <rect key="frame" x="0.0" y="0.0" width="550" height="120"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <gridView xPlacement="fill" yPlacement="bottom" rowAlignment="none" translatesAutoresizingMaskIntoConstraints="NO" id="RhZ-YV-NCa">
-                                <rect key="frame" x="20" y="27" width="440" height="73"/>
+                                <rect key="frame" x="20" y="27" width="510" height="73"/>
                                 <rows>
                                     <gridRow id="bdV-r4-H5D"/>
                                     <gridRow id="bCA-Yc-63V"/>
@@ -325,31 +325,8 @@
                                 </columns>
                                 <gridCells>
                                     <gridCell row="bdV-r4-H5D" column="qqt-Rf-X4b" id="fSn-et-fa6">
-                                        <textField key="contentView" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bHg-tq-4hx">
-                                            <rect key="frame" x="-2" y="54" width="107" height="16"/>
-                                            <textFieldCell key="cell" lineBreakMode="clipping" title="Source Encoding" id="5uq-eV-o9a">
-                                                <font key="font" usesAppearanceFont="YES"/>
-                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                            </textFieldCell>
-                                        </textField>
-                                    </gridCell>
-                                    <gridCell row="bdV-r4-H5D" column="jRC-nX-Gci" id="dwT-Md-46B">
-                                        <comboBox key="contentView" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="LtS-Hn-egJ">
-                                            <rect key="frame" x="109" y="50" width="334" height="25"/>
-                                            <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="Select an encoding to interpret source text" drawsBackground="YES" completes="NO" usesDataSource="YES" numberOfVisibleItems="10" id="b9g-Nk-zeP">
-                                                <font key="font" metaFont="system"/>
-                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                            </comboBoxCell>
-                                            <connections>
-                                                <action selector="SourceEncodingComboBoxAction:" target="XfG-lQ-9wD" id="PTc-K6-M7P"/>
-                                            </connections>
-                                        </comboBox>
-                                    </gridCell>
-                                    <gridCell row="bCA-Yc-63V" column="qqt-Rf-X4b" id="N6T-HJ-RRu">
                                         <textField key="contentView" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="H5I-rm-1VO">
-                                            <rect key="frame" x="-2" y="27" width="107" height="16"/>
+                                            <rect key="frame" x="-2" y="52" width="103" height="16"/>
                                             <textFieldCell key="cell" lineBreakMode="clipping" title="Source Text" id="MU4-S2-bml">
                                                 <font key="font" usesAppearanceFont="YES"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -357,9 +334,9 @@
                                             </textFieldCell>
                                         </textField>
                                     </gridCell>
-                                    <gridCell row="bCA-Yc-63V" column="jRC-nX-Gci" id="h7g-Th-Dqu">
+                                    <gridCell row="bdV-r4-H5D" column="jRC-nX-Gci" id="dwT-Md-46B">
                                         <textField key="contentView" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="QPM-WC-gFZ">
-                                            <rect key="frame" x="109" y="27" width="331" height="21"/>
+                                            <rect key="frame" x="105" y="52" width="405" height="21"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="Type text to be converted here" drawsBackground="YES" usesSingleLineMode="YES" id="LMx-Re-6YY">
                                                 <font key="font" usesAppearanceFont="YES"/>
                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -370,9 +347,32 @@
                                             </connections>
                                         </textField>
                                     </gridCell>
+                                    <gridCell row="bCA-Yc-63V" column="qqt-Rf-X4b" id="N6T-HJ-RRu">
+                                        <textField key="contentView" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bHg-tq-4hx">
+                                            <rect key="frame" x="-2" y="27" width="103" height="16"/>
+                                            <textFieldCell key="cell" lineBreakMode="clipping" title="Target Encoding" id="5uq-eV-o9a">
+                                                <font key="font" usesAppearanceFont="YES"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                    </gridCell>
+                                    <gridCell row="bCA-Yc-63V" column="jRC-nX-Gci" id="h7g-Th-Dqu">
+                                        <comboBox key="contentView" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="LtS-Hn-egJ">
+                                            <rect key="frame" x="105" y="23" width="408" height="25"/>
+                                            <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="Select an encoding to interpret source text" drawsBackground="YES" completes="NO" usesDataSource="YES" numberOfVisibleItems="10" id="b9g-Nk-zeP">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </comboBoxCell>
+                                            <connections>
+                                                <action selector="SourceEncodingComboBoxAction:" target="XfG-lQ-9wD" id="PTc-K6-M7P"/>
+                                            </connections>
+                                        </comboBox>
+                                    </gridCell>
                                     <gridCell row="P8J-kT-blS" column="qqt-Rf-X4b" id="JzR-MR-3Y0">
                                         <textField key="contentView" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="95D-ED-CQ0">
-                                            <rect key="frame" x="-2" y="0.0" width="107" height="16"/>
+                                            <rect key="frame" x="-2" y="0.0" width="103" height="16"/>
                                             <textFieldCell key="cell" lineBreakMode="clipping" title="Result Text" id="1tR-LY-Bmi">
                                                 <font key="font" usesAppearanceFont="YES"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -382,7 +382,7 @@
                                     </gridCell>
                                     <gridCell row="P8J-kT-blS" column="jRC-nX-Gci" id="OoS-5Y-qq1">
                                         <textField key="contentView" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="0wO-JF-6Ff">
-                                            <rect key="frame" x="109" y="0.0" width="331" height="21"/>
+                                            <rect key="frame" x="105" y="0.0" width="405" height="21"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" allowsUndo="NO" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="Converted text will be shown here" drawsBackground="YES" usesSingleLineMode="YES" id="FCT-rR-WmE">
                                                 <font key="font" usesAppearanceFont="YES"/>
                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -401,8 +401,8 @@
                     </view>
                     <connections>
                         <outlet property="ResultTextField" destination="0wO-JF-6Ff" id="xww-ex-SRL"/>
-                        <outlet property="SourceEncodingComboBox" destination="LtS-Hn-egJ" id="c0R-Th-d9N"/>
                         <outlet property="SourceTextField" destination="QPM-WC-gFZ" id="bOE-SO-68J"/>
+                        <outlet property="TargetEncodingComboBox" destination="LtS-Hn-egJ" id="ozU-ia-xN6"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
