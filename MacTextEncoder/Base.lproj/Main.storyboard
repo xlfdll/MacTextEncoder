@@ -83,12 +83,6 @@
                                                 <action selector="paste:" target="Ady-hI-5gd" id="CxT-Jl-Ds2"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem title="Paste and Match Style" keyEquivalent="V" id="hC5-CW-Qx5">
-                                            <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
-                                            <connections>
-                                                <action selector="pasteAsPlainText:" target="Ady-hI-5gd" id="y8Y-BI-5hY"/>
-                                            </connections>
-                                        </menuItem>
                                         <menuItem title="Delete" id="N4f-vL-s9h">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
@@ -99,175 +93,6 @@
                                             <connections>
                                                 <action selector="selectAll:" target="Ady-hI-5gd" id="nT7-iD-w2r"/>
                                             </connections>
-                                        </menuItem>
-                                        <menuItem isSeparatorItem="YES" id="ty2-x2-RxJ"/>
-                                        <menuItem title="Find" id="hzI-ms-ot6">
-                                            <modifierMask key="keyEquivalentModifierMask"/>
-                                            <menu key="submenu" title="Find" id="BJG-2f-mCC">
-                                                <items>
-                                                    <menuItem title="Find…" tag="1" keyEquivalent="f" id="Mjm-6C-SsD">
-                                                        <connections>
-                                                            <action selector="performFindPanelAction:" target="Ady-hI-5gd" id="87m-M1-jGB"/>
-                                                        </connections>
-                                                    </menuItem>
-                                                    <menuItem title="Find and Replace…" tag="12" keyEquivalent="f" id="73u-s5-wKj">
-                                                        <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
-                                                        <connections>
-                                                            <action selector="performTextFinderAction:" target="Ady-hI-5gd" id="zE6-kv-8Bp"/>
-                                                        </connections>
-                                                    </menuItem>
-                                                    <menuItem title="Find Next" tag="2" keyEquivalent="g" id="agC-Nn-8BZ">
-                                                        <connections>
-                                                            <action selector="performFindPanelAction:" target="Ady-hI-5gd" id="0Vr-7Z-nbp"/>
-                                                        </connections>
-                                                    </menuItem>
-                                                    <menuItem title="Find Previous" tag="3" keyEquivalent="G" id="eKo-Mk-47M">
-                                                        <connections>
-                                                            <action selector="performFindPanelAction:" target="Ady-hI-5gd" id="odE-rT-d7n"/>
-                                                        </connections>
-                                                    </menuItem>
-                                                    <menuItem title="Use Selection for Find" tag="7" keyEquivalent="e" id="4WK-Z4-8e6">
-                                                        <connections>
-                                                            <action selector="performFindPanelAction:" target="Ady-hI-5gd" id="EZF-J4-O9A"/>
-                                                        </connections>
-                                                    </menuItem>
-                                                    <menuItem title="Jump to Selection" keyEquivalent="j" id="rpz-Pe-sNK">
-                                                        <connections>
-                                                            <action selector="centerSelectionInVisibleArea:" target="Ady-hI-5gd" id="QZB-AF-HWt"/>
-                                                        </connections>
-                                                    </menuItem>
-                                                </items>
-                                            </menu>
-                                        </menuItem>
-                                        <menuItem title="Spelling and Grammar" id="dJ4-jK-Ovi">
-                                            <modifierMask key="keyEquivalentModifierMask"/>
-                                            <menu key="submenu" title="Spelling" id="P6x-Pd-Cgr">
-                                                <items>
-                                                    <menuItem title="Show Spelling and Grammar" keyEquivalent=":" id="qOJ-pt-6Wv">
-                                                        <connections>
-                                                            <action selector="showGuessPanel:" target="Ady-hI-5gd" id="9Sl-SY-edA"/>
-                                                        </connections>
-                                                    </menuItem>
-                                                    <menuItem title="Check Document Now" keyEquivalent=";" id="Aq3-1A-KhL">
-                                                        <connections>
-                                                            <action selector="checkSpelling:" target="Ady-hI-5gd" id="9Ex-LE-ZpV"/>
-                                                        </connections>
-                                                    </menuItem>
-                                                    <menuItem isSeparatorItem="YES" id="JpA-lL-s0U"/>
-                                                    <menuItem title="Check Spelling While Typing" id="IHZ-np-XKH">
-                                                        <modifierMask key="keyEquivalentModifierMask"/>
-                                                        <connections>
-                                                            <action selector="toggleContinuousSpellChecking:" target="Ady-hI-5gd" id="ZGB-Sk-rFd"/>
-                                                        </connections>
-                                                    </menuItem>
-                                                    <menuItem title="Check Grammar With Spelling" id="mKT-4u-fyh">
-                                                        <modifierMask key="keyEquivalentModifierMask"/>
-                                                        <connections>
-                                                            <action selector="toggleGrammarChecking:" target="Ady-hI-5gd" id="iaU-HC-JLI"/>
-                                                        </connections>
-                                                    </menuItem>
-                                                    <menuItem title="Correct Spelling Automatically" id="sYj-ug-8B5">
-                                                        <modifierMask key="keyEquivalentModifierMask"/>
-                                                        <connections>
-                                                            <action selector="toggleAutomaticSpellingCorrection:" target="Ady-hI-5gd" id="WpR-XS-ecT"/>
-                                                        </connections>
-                                                    </menuItem>
-                                                </items>
-                                            </menu>
-                                        </menuItem>
-                                        <menuItem title="Substitutions" id="CI6-Ec-9Tz">
-                                            <modifierMask key="keyEquivalentModifierMask"/>
-                                            <menu key="submenu" title="Substitutions" id="Hqr-lK-9Fw">
-                                                <items>
-                                                    <menuItem title="Show Substitutions" id="bhk-Xt-5mt">
-                                                        <modifierMask key="keyEquivalentModifierMask"/>
-                                                        <connections>
-                                                            <action selector="orderFrontSubstitutionsPanel:" target="Ady-hI-5gd" id="IYQ-sf-IG1"/>
-                                                        </connections>
-                                                    </menuItem>
-                                                    <menuItem isSeparatorItem="YES" id="48f-8p-Po9"/>
-                                                    <menuItem title="Smart Copy/Paste" id="K8J-Uu-HM5">
-                                                        <modifierMask key="keyEquivalentModifierMask"/>
-                                                        <connections>
-                                                            <action selector="toggleSmartInsertDelete:" target="Ady-hI-5gd" id="NrQ-if-mbI"/>
-                                                        </connections>
-                                                    </menuItem>
-                                                    <menuItem title="Smart Quotes" id="9vl-ah-D6b">
-                                                        <modifierMask key="keyEquivalentModifierMask"/>
-                                                        <connections>
-                                                            <action selector="toggleAutomaticQuoteSubstitution:" target="Ady-hI-5gd" id="EUU-gF-xlO"/>
-                                                        </connections>
-                                                    </menuItem>
-                                                    <menuItem title="Smart Dashes" id="G5T-1v-8Lz">
-                                                        <modifierMask key="keyEquivalentModifierMask"/>
-                                                        <connections>
-                                                            <action selector="toggleAutomaticDashSubstitution:" target="Ady-hI-5gd" id="43m-uT-0Lj"/>
-                                                        </connections>
-                                                    </menuItem>
-                                                    <menuItem title="Smart Links" id="W0F-O5-YvL">
-                                                        <modifierMask key="keyEquivalentModifierMask"/>
-                                                        <connections>
-                                                            <action selector="toggleAutomaticLinkDetection:" target="Ady-hI-5gd" id="KpZ-VS-zry"/>
-                                                        </connections>
-                                                    </menuItem>
-                                                    <menuItem title="Data Detectors" id="UGy-HD-GDl">
-                                                        <modifierMask key="keyEquivalentModifierMask"/>
-                                                        <connections>
-                                                            <action selector="toggleAutomaticDataDetection:" target="Ady-hI-5gd" id="3Lw-eZ-CJS"/>
-                                                        </connections>
-                                                    </menuItem>
-                                                    <menuItem title="Text Replacement" id="6Yt-Zh-LCI">
-                                                        <modifierMask key="keyEquivalentModifierMask"/>
-                                                        <connections>
-                                                            <action selector="toggleAutomaticTextReplacement:" target="Ady-hI-5gd" id="6Go-7r-ouX"/>
-                                                        </connections>
-                                                    </menuItem>
-                                                </items>
-                                            </menu>
-                                        </menuItem>
-                                        <menuItem title="Transformations" id="UVo-Hi-vew">
-                                            <modifierMask key="keyEquivalentModifierMask"/>
-                                            <menu key="submenu" title="Transformations" id="JvT-ov-cRD">
-                                                <items>
-                                                    <menuItem title="Make Upper Case" id="ybc-BM-UB4">
-                                                        <modifierMask key="keyEquivalentModifierMask"/>
-                                                        <connections>
-                                                            <action selector="uppercaseWord:" target="Ady-hI-5gd" id="D8o-VT-hh5"/>
-                                                        </connections>
-                                                    </menuItem>
-                                                    <menuItem title="Make Lower Case" id="Hjv-LP-6Zx">
-                                                        <modifierMask key="keyEquivalentModifierMask"/>
-                                                        <connections>
-                                                            <action selector="lowercaseWord:" target="Ady-hI-5gd" id="8RH-Rh-vKy"/>
-                                                        </connections>
-                                                    </menuItem>
-                                                    <menuItem title="Capitalize" id="24d-4C-v8j">
-                                                        <modifierMask key="keyEquivalentModifierMask"/>
-                                                        <connections>
-                                                            <action selector="capitalizeWord:" target="Ady-hI-5gd" id="HgC-O8-uP7"/>
-                                                        </connections>
-                                                    </menuItem>
-                                                </items>
-                                            </menu>
-                                        </menuItem>
-                                        <menuItem title="Speech" id="pHR-le-ZQB">
-                                            <modifierMask key="keyEquivalentModifierMask"/>
-                                            <menu key="submenu" title="Speech" id="UxD-u2-OAW">
-                                                <items>
-                                                    <menuItem title="Start Speaking" id="kIz-ff-Yw1">
-                                                        <modifierMask key="keyEquivalentModifierMask"/>
-                                                        <connections>
-                                                            <action selector="startSpeaking:" target="Ady-hI-5gd" id="Qqx-AF-V1g"/>
-                                                        </connections>
-                                                    </menuItem>
-                                                    <menuItem title="Stop Speaking" id="hpf-gD-SAu">
-                                                        <modifierMask key="keyEquivalentModifierMask"/>
-                                                        <connections>
-                                                            <action selector="stopSpeaking:" target="Ady-hI-5gd" id="cGN-hW-iuD"/>
-                                                        </connections>
-                                                    </menuItem>
-                                                </items>
-                                            </menu>
                                         </menuItem>
                                     </items>
                                 </menu>
@@ -290,7 +115,7 @@
                 <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
                     <window key="window" title="Mac Text Encoder" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
-                        <rect key="contentRect" x="196" y="240" width="480" height="120"/>
+                        <rect key="contentRect" x="196" y="240" width="480" height="135"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
                         <connections>
                             <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
@@ -309,15 +134,16 @@
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="MacTextEncoder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="550" height="120"/>
+                        <rect key="frame" x="0.0" y="0.0" width="550" height="135"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <gridView xPlacement="fill" yPlacement="bottom" rowAlignment="none" translatesAutoresizingMaskIntoConstraints="NO" id="RhZ-YV-NCa">
-                                <rect key="frame" x="20" y="27" width="510" height="73"/>
+                                <rect key="frame" x="20" y="17" width="510" height="98"/>
                                 <rows>
                                     <gridRow id="bdV-r4-H5D"/>
                                     <gridRow id="bCA-Yc-63V"/>
                                     <gridRow id="P8J-kT-blS"/>
+                                    <gridRow id="Bpk-Bk-heu"/>
                                 </rows>
                                 <columns>
                                     <gridColumn id="qqt-Rf-X4b"/>
@@ -325,9 +151,9 @@
                                 </columns>
                                 <gridCells>
                                     <gridCell row="bdV-r4-H5D" column="qqt-Rf-X4b" id="fSn-et-fa6">
-                                        <textField key="contentView" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="H5I-rm-1VO">
-                                            <rect key="frame" x="-2" y="52" width="103" height="16"/>
-                                            <textFieldCell key="cell" lineBreakMode="clipping" title="Source Text" id="MU4-S2-bml">
+                                        <textField key="contentView" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="OsV-0o-dMx">
+                                            <rect key="frame" x="-2" y="79" width="107" height="16"/>
+                                            <textFieldCell key="cell" lineBreakMode="clipping" title="Source Encoding" id="nac-0d-EqT">
                                                 <font key="font" usesAppearanceFont="YES"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -335,8 +161,28 @@
                                         </textField>
                                     </gridCell>
                                     <gridCell row="bdV-r4-H5D" column="jRC-nX-Gci" id="dwT-Md-46B">
+                                        <comboBox key="contentView" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="NXM-Fw-kOj">
+                                            <rect key="frame" x="109" y="75" width="404" height="25"/>
+                                            <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="Select an encoding to interpret source text" drawsBackground="YES" completes="NO" usesDataSource="YES" numberOfVisibleItems="10" id="COy-3y-Lyv">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </comboBoxCell>
+                                        </comboBox>
+                                    </gridCell>
+                                    <gridCell row="bCA-Yc-63V" column="qqt-Rf-X4b" id="N6T-HJ-RRu">
+                                        <textField key="contentView" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="H5I-rm-1VO">
+                                            <rect key="frame" x="-2" y="52" width="107" height="16"/>
+                                            <textFieldCell key="cell" lineBreakMode="clipping" title="Source Text" id="MU4-S2-bml">
+                                                <font key="font" usesAppearanceFont="YES"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                    </gridCell>
+                                    <gridCell row="bCA-Yc-63V" column="jRC-nX-Gci" id="h7g-Th-Dqu">
                                         <textField key="contentView" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="QPM-WC-gFZ">
-                                            <rect key="frame" x="105" y="52" width="405" height="21"/>
+                                            <rect key="frame" x="109" y="52" width="401" height="21"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="Type text to be converted here" drawsBackground="YES" usesSingleLineMode="YES" id="LMx-Re-6YY">
                                                 <font key="font" usesAppearanceFont="YES"/>
                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -347,33 +193,10 @@
                                             </connections>
                                         </textField>
                                     </gridCell>
-                                    <gridCell row="bCA-Yc-63V" column="qqt-Rf-X4b" id="N6T-HJ-RRu">
-                                        <textField key="contentView" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bHg-tq-4hx">
-                                            <rect key="frame" x="-2" y="27" width="103" height="16"/>
-                                            <textFieldCell key="cell" lineBreakMode="clipping" title="Target Encoding" id="5uq-eV-o9a">
-                                                <font key="font" usesAppearanceFont="YES"/>
-                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                            </textFieldCell>
-                                        </textField>
-                                    </gridCell>
-                                    <gridCell row="bCA-Yc-63V" column="jRC-nX-Gci" id="h7g-Th-Dqu">
-                                        <comboBox key="contentView" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="LtS-Hn-egJ">
-                                            <rect key="frame" x="105" y="23" width="408" height="25"/>
-                                            <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="Select an encoding to interpret source text" drawsBackground="YES" completes="NO" usesDataSource="YES" numberOfVisibleItems="10" id="b9g-Nk-zeP">
-                                                <font key="font" metaFont="system"/>
-                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                            </comboBoxCell>
-                                            <connections>
-                                                <action selector="SourceEncodingComboBoxAction:" target="XfG-lQ-9wD" id="PTc-K6-M7P"/>
-                                            </connections>
-                                        </comboBox>
-                                    </gridCell>
                                     <gridCell row="P8J-kT-blS" column="qqt-Rf-X4b" id="JzR-MR-3Y0">
-                                        <textField key="contentView" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="95D-ED-CQ0">
-                                            <rect key="frame" x="-2" y="0.0" width="103" height="16"/>
-                                            <textFieldCell key="cell" lineBreakMode="clipping" title="Result Text" id="1tR-LY-Bmi">
+                                        <textField key="contentView" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gWF-ko-V2B">
+                                            <rect key="frame" x="-2" y="27" width="107" height="16"/>
+                                            <textFieldCell key="cell" lineBreakMode="clipping" title="Target Encoding" id="Wym-0w-zvL">
                                                 <font key="font" usesAppearanceFont="YES"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -381,8 +204,28 @@
                                         </textField>
                                     </gridCell>
                                     <gridCell row="P8J-kT-blS" column="jRC-nX-Gci" id="OoS-5Y-qq1">
+                                        <comboBox key="contentView" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="LtS-Hn-egJ">
+                                            <rect key="frame" x="109" y="23" width="404" height="25"/>
+                                            <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="Select an encoding to convert source text" drawsBackground="YES" completes="NO" usesDataSource="YES" numberOfVisibleItems="10" id="b9g-Nk-zeP">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </comboBoxCell>
+                                        </comboBox>
+                                    </gridCell>
+                                    <gridCell row="Bpk-Bk-heu" column="qqt-Rf-X4b" id="tsj-4k-kqB">
+                                        <textField key="contentView" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="95D-ED-CQ0">
+                                            <rect key="frame" x="-2" y="0.0" width="107" height="16"/>
+                                            <textFieldCell key="cell" lineBreakMode="clipping" title="Result Text" id="1tR-LY-Bmi">
+                                                <font key="font" usesAppearanceFont="YES"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                    </gridCell>
+                                    <gridCell row="Bpk-Bk-heu" column="jRC-nX-Gci" id="SA7-rx-tCL">
                                         <textField key="contentView" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="0wO-JF-6Ff">
-                                            <rect key="frame" x="105" y="0.0" width="405" height="21"/>
+                                            <rect key="frame" x="109" y="0.0" width="401" height="21"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" allowsUndo="NO" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="Converted text will be shown here" drawsBackground="YES" usesSingleLineMode="YES" id="FCT-rR-WmE">
                                                 <font key="font" usesAppearanceFont="YES"/>
                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -401,6 +244,7 @@
                     </view>
                     <connections>
                         <outlet property="ResultTextField" destination="0wO-JF-6Ff" id="xww-ex-SRL"/>
+                        <outlet property="SourceEncodingComboBox" destination="NXM-Fw-kOj" id="j7T-mF-M2J"/>
                         <outlet property="SourceTextField" destination="QPM-WC-gFZ" id="bOE-SO-68J"/>
                         <outlet property="TargetEncodingComboBox" destination="LtS-Hn-egJ" id="ozU-ia-xN6"/>
                     </connections>
