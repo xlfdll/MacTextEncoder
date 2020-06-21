@@ -26,7 +26,7 @@ class EncodingListDataSource: NSObject, NSComboBoxDataSource {
     func comboBox(_ comboBox: NSComboBox, objectValueForItemAt index: Int) -> Any? {
         let cfEncoding = self.Encodings[index]
         let encodingName = CFStringGetNameOfEncoding(cfEncoding) ?? "" as CFString
-        let encodingIANAName = CFStringConvertEncodingToIANACharSetName(cfEncoding) ?? "" as CFString
+        let encodingIANAName = CFStringConvertEncodingToIANACharSetName(cfEncoding) ?? "n/a" as CFString
 
         return String(encodingName as NSString) + " (" + String(encodingIANAName as NSString) + ")"
     }
