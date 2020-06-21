@@ -79,6 +79,7 @@
 				450FB0AC249B8CD00014B460 /* Sources */,
 				450FB0AD249B8CD00014B460 /* Frameworks */,
 				450FB0AE249B8CD00014B460 /* Resources */,
+				452E155E249FD26B0031F66C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -135,6 +136,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		452E155E249FD26B0031F66C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "GIT_RELEASE_VERSION=$(git log --oneline | wc -l | xargs)\nGIT_COMMIT_HASH=$(git show -s --format=%h)\n\ndefaults write \"${BUILT_PRODUCTS_DIR}/${INFOPLIST_PATH%.*}\" \"CFBundleVersion\" \"${GIT_RELEASE_VERSION}-${GIT_COMMIT_HASH}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		450FB0AC249B8CD00014B460 /* Sources */ = {
@@ -286,6 +307,7 @@
 				CODE_SIGN_ENTITLEMENTS = MacTextEncoder/MacTextEncoder.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = MacTextEncoder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -304,6 +326,7 @@
 				CODE_SIGN_ENTITLEMENTS = MacTextEncoder/MacTextEncoder.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = MacTextEncoder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
