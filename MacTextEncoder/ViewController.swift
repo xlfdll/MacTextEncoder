@@ -76,9 +76,9 @@ class ViewController: NSViewController, NSComboBoxDelegate, NSTextFieldDelegate 
 
     private func updateButtonStates() {
         SourceEncodingUpPushButton.isEnabled = SourceEncodingComboBox.indexOfSelectedItem > 0;
-        SourceEncodingDownPushButton.isEnabled = SourceEncodingComboBox.indexOfSelectedItem < self.sourceEncodingDataSource.Encodings.count;
+        SourceEncodingDownPushButton.isEnabled = SourceEncodingComboBox.indexOfSelectedItem < self.sourceEncodingDataSource.Encodings.count - 1;
         TargetEncodingUpPushButton.isEnabled = TargetEncodingComboBox.indexOfSelectedItem > 0;
-        TargetEncodingDownPushButton.isEnabled = TargetEncodingComboBox.indexOfSelectedItem < self.targetEncodingDataSource.Encodings.count;
+        TargetEncodingDownPushButton.isEnabled = TargetEncodingComboBox.indexOfSelectedItem < self.targetEncodingDataSource.Encodings.count - 1;
     }
 
     let sourceEncodingDataSource = EncodingListDataSource(encodingListPointer: NSString.availableStringEncodings)
