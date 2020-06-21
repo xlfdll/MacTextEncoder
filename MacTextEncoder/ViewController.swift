@@ -25,15 +25,6 @@ class ViewController: NSViewController, NSComboBoxDelegate, NSTextFieldDelegate 
         updateButtonStates()
     }
 
-    func comboBoxSelectionDidChange(_ notification: Notification) {
-        updateButtonStates()
-        performTextConversion()
-    }
-
-    func controlTextDidChange(_ notification: Notification) {
-        performTextConversion()
-    }
-
     @IBAction func SourceEncodingUpPushButtonAction(_ sender: NSButton) {
         if (SourceEncodingComboBox.indexOfSelectedItem > 0) {
             SourceEncodingComboBox.selectItem(at: SourceEncodingComboBox.indexOfSelectedItem - 1)
@@ -60,14 +51,27 @@ class ViewController: NSViewController, NSComboBoxDelegate, NSTextFieldDelegate 
         updateButtonStates()
     }
 
-    private func performTextConversion() {
-        let sourceEncoding = String.Encoding(rawValue: CFStringConvertEncodingToNSStringEncoding(self.sourceEncodingDataSource.Encodings[SourceEncodingComboBox.indexOfSelectedItem]))
-        let targetEncoding = String.Encoding(rawValue: CFStringConvertEncodingToNSStringEncoding(self.targetEncodingDataSource.Encodings[TargetEncodingComboBox.indexOfSelectedItem]))
-        // Get bytes using source encoding
-        let sourceTextData = SourceTextField.stringValue.data(using: sourceEncoding, allowLossyConversion: true)!
+    func comboBoxSelectionDidChange(_ notification: Notification) {
+        updateButtonStates()
+        performTextConversion()
+    }
 
-        // Convert!
-        ResultTextField.stringValue = String(data: sourceTextData, encoding: targetEncoding) ?? " "
+    func controlTextDidChange(_ notification: Notification) {
+        performTextConversion()
+    }
+
+    private func performTextConversion() {
+        if (SourceTextField.stringValue != "") {
+            let sourceEncoding = String.Encoding(rawValue: CFStringConvertEncodingToNSStringEncoding(self.sourceEncodingDataSource.Encodings[SourceEncodingComboBox.indexOfSelectedItem]))
+            let targetEncoding = String.Encoding(rawValue: CFStringConvertEncodingToNSStringEncoding(self.targetEncodingDataSource.Encodings[TargetEncodingComboBox.indexOfSelectedItem]))
+            // Get bytes using source encoding
+            let sourceTextData = SourceTextField.stringValue.data(using: sourceEncoding, allowLossyConversion: true)!
+
+            // Convert!
+            ResultTextField.stringValue = String(data: sourceTextData, encoding: targetEncoding) ?? " "
+        } else {
+            ResultTextField.stringValue = "";
+        }
     }
 
     private func updateButtonStates() {
