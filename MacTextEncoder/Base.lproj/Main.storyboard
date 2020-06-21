@@ -114,8 +114,8 @@
             <objects>
                 <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
                     <window key="window" title="Mac Text Encoder" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
-                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
-                        <rect key="contentRect" x="196" y="240" width="480" height="135"/>
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
+                        <rect key="contentRect" x="196" y="240" width="480" height="150"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
                         <connections>
                             <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
@@ -133,12 +133,12 @@
         <scene sceneID="hIz-AP-VOD">
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="MacTextEncoder" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="550" height="135"/>
+                    <view key="view" misplaced="YES" id="m2S-Jp-Qdl">
+                        <rect key="frame" x="0.0" y="0.0" width="580" height="150"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <gridView xPlacement="fill" yPlacement="bottom" rowAlignment="none" translatesAutoresizingMaskIntoConstraints="NO" id="RhZ-YV-NCa">
-                                <rect key="frame" x="20" y="17" width="510" height="98"/>
+                            <gridView xPlacement="fill" yPlacement="center" rowAlignment="firstBaseline" translatesAutoresizingMaskIntoConstraints="NO" id="RhZ-YV-NCa">
+                                <rect key="frame" x="20" y="24" width="541" height="106"/>
                                 <rows>
                                     <gridRow id="bdV-r4-H5D"/>
                                     <gridRow id="bCA-Yc-63V"/>
@@ -147,12 +147,14 @@
                                 </rows>
                                 <columns>
                                     <gridColumn id="qqt-Rf-X4b"/>
-                                    <gridColumn id="jRC-nX-Gci"/>
+                                    <gridColumn width="350" id="jRC-nX-Gci"/>
+                                    <gridColumn xPlacement="fill" width="32" id="T1y-J8-Uta"/>
+                                    <gridColumn xPlacement="fill" width="32" id="8uO-fF-PfU"/>
                                 </columns>
                                 <gridCells>
                                     <gridCell row="bdV-r4-H5D" column="qqt-Rf-X4b" id="fSn-et-fa6">
                                         <textField key="contentView" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="OsV-0o-dMx">
-                                            <rect key="frame" x="-2" y="79" width="107" height="16"/>
+                                            <rect key="frame" x="-2" y="87" width="113" height="16"/>
                                             <textFieldCell key="cell" lineBreakMode="clipping" title="Source Encoding" id="nac-0d-EqT">
                                                 <font key="font" usesAppearanceFont="YES"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -162,7 +164,7 @@
                                     </gridCell>
                                     <gridCell row="bdV-r4-H5D" column="jRC-nX-Gci" id="dwT-Md-46B">
                                         <comboBox key="contentView" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="NXM-Fw-kOj">
-                                            <rect key="frame" x="109" y="75" width="404" height="25"/>
+                                            <rect key="frame" x="115" y="81" width="353" height="25"/>
                                             <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="Select an encoding to interpret source text" drawsBackground="YES" completes="NO" usesDataSource="YES" numberOfVisibleItems="10" id="COy-3y-Lyv">
                                                 <font key="font" metaFont="system"/>
                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -170,9 +172,33 @@
                                             </comboBoxCell>
                                         </comboBox>
                                     </gridCell>
+                                    <gridCell row="bdV-r4-H5D" column="T1y-J8-Uta" id="tNG-WL-RsB">
+                                        <button key="contentView" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="6Pz-ZW-n8R">
+                                            <rect key="frame" x="465" y="77" width="44" height="32"/>
+                                            <buttonCell key="cell" type="push" bezelStyle="rounded" image="NSTouchBarGoUpTemplate" imagePosition="only" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="AwE-iF-FJq">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="SourceEncodingUpPushButtonAction:" target="XfG-lQ-9wD" id="dFi-6M-Jj4"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="bdV-r4-H5D" column="8uO-fF-PfU" id="ZKd-wN-ddv">
+                                        <button key="contentView" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Q3V-W5-mcb">
+                                            <rect key="frame" x="503" y="77" width="44" height="32"/>
+                                            <buttonCell key="cell" type="push" bezelStyle="rounded" image="NSTouchBarGoDownTemplate" imagePosition="only" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="RON-R4-OCB">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="SourceEncodingDownPushButtonAction:" target="XfG-lQ-9wD" id="q7W-Gd-ez7"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
                                     <gridCell row="bCA-Yc-63V" column="qqt-Rf-X4b" id="N6T-HJ-RRu">
                                         <textField key="contentView" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="H5I-rm-1VO">
-                                            <rect key="frame" x="-2" y="52" width="107" height="16"/>
+                                            <rect key="frame" x="-2" y="59" width="113" height="16"/>
                                             <textFieldCell key="cell" lineBreakMode="clipping" title="Source Text" id="MU4-S2-bml">
                                                 <font key="font" usesAppearanceFont="YES"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -182,7 +208,7 @@
                                     </gridCell>
                                     <gridCell row="bCA-Yc-63V" column="jRC-nX-Gci" id="h7g-Th-Dqu">
                                         <textField key="contentView" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="QPM-WC-gFZ">
-                                            <rect key="frame" x="109" y="52" width="401" height="21"/>
+                                            <rect key="frame" x="115" y="57" width="350" height="21"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="Type text to be converted here" drawsBackground="YES" usesSingleLineMode="YES" id="LMx-Re-6YY">
                                                 <font key="font" usesAppearanceFont="YES"/>
                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -193,9 +219,11 @@
                                             </connections>
                                         </textField>
                                     </gridCell>
+                                    <gridCell row="bCA-Yc-63V" column="T1y-J8-Uta" id="2BZ-Y2-HHw"/>
+                                    <gridCell row="bCA-Yc-63V" column="8uO-fF-PfU" id="oje-KM-3xg"/>
                                     <gridCell row="P8J-kT-blS" column="qqt-Rf-X4b" id="JzR-MR-3Y0">
                                         <textField key="contentView" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gWF-ko-V2B">
-                                            <rect key="frame" x="-2" y="27" width="107" height="16"/>
+                                            <rect key="frame" x="-2" y="31" width="113" height="16"/>
                                             <textFieldCell key="cell" lineBreakMode="clipping" title="Target Encoding" id="Wym-0w-zvL">
                                                 <font key="font" usesAppearanceFont="YES"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -205,7 +233,7 @@
                                     </gridCell>
                                     <gridCell row="P8J-kT-blS" column="jRC-nX-Gci" id="OoS-5Y-qq1">
                                         <comboBox key="contentView" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="LtS-Hn-egJ">
-                                            <rect key="frame" x="109" y="23" width="404" height="25"/>
+                                            <rect key="frame" x="115" y="25" width="353" height="25"/>
                                             <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="Select an encoding to convert source text" drawsBackground="YES" completes="NO" usesDataSource="YES" numberOfVisibleItems="10" id="b9g-Nk-zeP">
                                                 <font key="font" metaFont="system"/>
                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -213,9 +241,33 @@
                                             </comboBoxCell>
                                         </comboBox>
                                     </gridCell>
+                                    <gridCell row="P8J-kT-blS" column="T1y-J8-Uta" id="hxg-HV-20F">
+                                        <button key="contentView" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="FaL-jb-sRh">
+                                            <rect key="frame" x="465" y="21" width="44" height="32"/>
+                                            <buttonCell key="cell" type="push" bezelStyle="rounded" image="NSTouchBarGoUpTemplate" imagePosition="only" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="p1F-Tg-BMN">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="TargetEncodingUpPushButtonAction:" target="XfG-lQ-9wD" id="qBk-dP-nlu"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
+                                    <gridCell row="P8J-kT-blS" column="8uO-fF-PfU" id="ROH-N4-i0V">
+                                        <button key="contentView" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="E5U-Nf-m1G">
+                                            <rect key="frame" x="503" y="21" width="44" height="32"/>
+                                            <buttonCell key="cell" type="push" bezelStyle="rounded" image="NSTouchBarGoDownTemplate" imagePosition="only" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Uum-kd-zRG">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="TargetEncodingDownPushButtonAction:" target="XfG-lQ-9wD" id="67B-0B-vLF"/>
+                                            </connections>
+                                        </button>
+                                    </gridCell>
                                     <gridCell row="Bpk-Bk-heu" column="qqt-Rf-X4b" id="tsj-4k-kqB">
                                         <textField key="contentView" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="95D-ED-CQ0">
-                                            <rect key="frame" x="-2" y="0.0" width="107" height="16"/>
+                                            <rect key="frame" x="-2" y="3" width="113" height="16"/>
                                             <textFieldCell key="cell" lineBreakMode="clipping" title="Result Text" id="1tR-LY-Bmi">
                                                 <font key="font" usesAppearanceFont="YES"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -225,7 +277,7 @@
                                     </gridCell>
                                     <gridCell row="Bpk-Bk-heu" column="jRC-nX-Gci" id="SA7-rx-tCL">
                                         <textField key="contentView" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="0wO-JF-6Ff">
-                                            <rect key="frame" x="109" y="0.0" width="401" height="21"/>
+                                            <rect key="frame" x="115" y="1" width="350" height="21"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" allowsUndo="NO" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="Converted text will be shown here" drawsBackground="YES" usesSingleLineMode="YES" id="FCT-rR-WmE">
                                                 <font key="font" usesAppearanceFont="YES"/>
                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -233,6 +285,8 @@
                                             </textFieldCell>
                                         </textField>
                                     </gridCell>
+                                    <gridCell row="Bpk-Bk-heu" column="T1y-J8-Uta" id="DYf-Rf-6gf"/>
+                                    <gridCell row="Bpk-Bk-heu" column="8uO-fF-PfU" id="XK5-DG-Wpr"/>
                                 </gridCells>
                             </gridView>
                         </subviews>
@@ -245,8 +299,12 @@
                     <connections>
                         <outlet property="ResultTextField" destination="0wO-JF-6Ff" id="xww-ex-SRL"/>
                         <outlet property="SourceEncodingComboBox" destination="NXM-Fw-kOj" id="j7T-mF-M2J"/>
+                        <outlet property="SourceEncodingDownPushButton" destination="Q3V-W5-mcb" id="oVw-Xh-eEW"/>
+                        <outlet property="SourceEncodingUpPushButton" destination="6Pz-ZW-n8R" id="J3c-Gr-f8W"/>
                         <outlet property="SourceTextField" destination="QPM-WC-gFZ" id="bOE-SO-68J"/>
                         <outlet property="TargetEncodingComboBox" destination="LtS-Hn-egJ" id="ozU-ia-xN6"/>
+                        <outlet property="TargetEncodingDownPushButton" destination="E5U-Nf-m1G" id="Abo-7k-Qcr"/>
+                        <outlet property="TargetEncodingUpPushButton" destination="FaL-jb-sRh" id="btj-Og-LKo"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -254,4 +312,8 @@
             <point key="canvasLocation" x="75" y="655"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="NSTouchBarGoDownTemplate" width="16" height="30"/>
+        <image name="NSTouchBarGoUpTemplate" width="16" height="30"/>
+    </resources>
 </document>

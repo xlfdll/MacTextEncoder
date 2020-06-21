@@ -21,20 +21,43 @@ class ViewController: NSViewController, NSComboBoxDelegate, NSTextFieldDelegate 
         TargetEncodingComboBox.dataSource = self.targetEncodingDataSource
         TargetEncodingComboBox.selectItem(at: self.targetEncodingDataSource.Encodings.firstIndex(of: CFStringConvertNSStringEncodingToEncoding(String.Encoding.utf8.rawValue)) ?? 0)
         TargetEncodingComboBox.delegate = self
-    }
 
-    override var representedObject: Any? {
-        didSet {
-            // Update the view, if already loaded.
-        }
+        updateButtonStates()
     }
 
     func comboBoxSelectionDidChange(_ notification: Notification) {
+        updateButtonStates()
         performTextConversion()
     }
 
     func controlTextDidChange(_ notification: Notification) {
         performTextConversion()
+    }
+
+    @IBAction func SourceEncodingUpPushButtonAction(_ sender: NSButton) {
+        if (SourceEncodingComboBox.indexOfSelectedItem > 0) {
+            SourceEncodingComboBox.selectItem(at: SourceEncodingComboBox.indexOfSelectedItem - 1)
+        }
+
+        updateButtonStates()
+    }
+
+    @IBAction func SourceEncodingDownPushButtonAction(_ sender: NSButton) {
+        SourceEncodingComboBox.selectItem(at: SourceEncodingComboBox.indexOfSelectedItem + 1)
+
+        updateButtonStates()
+    }
+
+    @IBAction func TargetEncodingUpPushButtonAction(_ sender: NSButton) {
+        TargetEncodingComboBox.selectItem(at: TargetEncodingComboBox.indexOfSelectedItem - 1)
+
+        updateButtonStates()
+    }
+
+    @IBAction func TargetEncodingDownPushButtonAction(_ sender: NSButton) {
+        TargetEncodingComboBox.selectItem(at: TargetEncodingComboBox.indexOfSelectedItem + 1)
+
+        updateButtonStates()
     }
 
     private func performTextConversion() {
@@ -47,12 +70,23 @@ class ViewController: NSViewController, NSComboBoxDelegate, NSTextFieldDelegate 
         ResultTextField.stringValue = String(data: sourceTextData, encoding: targetEncoding) ?? " "
     }
 
+    private func updateButtonStates() {
+        SourceEncodingUpPushButton.isEnabled = SourceEncodingComboBox.indexOfSelectedItem > 0;
+        SourceEncodingDownPushButton.isEnabled = SourceEncodingComboBox.indexOfSelectedItem < self.sourceEncodingDataSource.Encodings.count;
+        TargetEncodingUpPushButton.isEnabled = TargetEncodingComboBox.indexOfSelectedItem > 0;
+        TargetEncodingDownPushButton.isEnabled = TargetEncodingComboBox.indexOfSelectedItem < self.targetEncodingDataSource.Encodings.count;
+    }
+
     let sourceEncodingDataSource = EncodingListDataSource(encodingListPointer: NSString.availableStringEncodings)
     let targetEncodingDataSource = EncodingListDataSource(encodingListPointer: NSString.availableStringEncodings)
 
     @IBOutlet weak var SourceEncodingComboBox: NSComboBox!
+    @IBOutlet weak var SourceEncodingUpPushButton: NSButton!
+    @IBOutlet weak var SourceEncodingDownPushButton: NSButton!
     @IBOutlet weak var SourceTextField: NSTextField!
     @IBOutlet weak var TargetEncodingComboBox: NSComboBox!
+    @IBOutlet weak var TargetEncodingUpPushButton: NSButton!
+    @IBOutlet weak var TargetEncodingDownPushButton: NSButton!
     @IBOutlet weak var ResultTextField: NSTextField!
 }
 
