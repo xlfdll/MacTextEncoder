@@ -16,10 +16,10 @@ class ViewController: NSViewController, NSComboBoxDelegate, NSTextFieldDelegate 
         // Do any additional setup after loading the view.
         SourceTextField.delegate = self
         SourceEncodingComboBox.dataSource = self.sourceEncodingDataSource
-        SourceEncodingComboBox.selectItem(at: self.sourceEncodingDataSource.Encodings.firstIndex(of: String.Encoding.utf8.rawValue) ?? 0)
+        SourceEncodingComboBox.selectItem(at: self.sourceEncodingDataSource.Encodings.firstIndex(of: CFStringConvertNSStringEncodingToEncoding(String.Encoding.utf8.rawValue)) ?? 0)
         SourceEncodingComboBox.delegate = self
         TargetEncodingComboBox.dataSource = self.targetEncodingDataSource
-        TargetEncodingComboBox.selectItem(at: self.targetEncodingDataSource.Encodings.firstIndex(of: String.Encoding.utf8.rawValue) ?? 0)
+        TargetEncodingComboBox.selectItem(at: self.targetEncodingDataSource.Encodings.firstIndex(of: CFStringConvertNSStringEncodingToEncoding(String.Encoding.utf8.rawValue)) ?? 0)
         TargetEncodingComboBox.delegate = self
     }
 
@@ -38,13 +38,12 @@ class ViewController: NSViewController, NSComboBoxDelegate, NSTextFieldDelegate 
     }
 
     private func performTextConversion() {
-        let sourceEncoding = String.Encoding(rawValue: self.sourceEncodingDataSource.Encodings[SourceEncodingComboBox.indexOfSelectedItem])
-        let targetEncoding = String.Encoding(rawValue: self.targetEncodingDataSource.Encodings[TargetEncodingComboBox.indexOfSelectedItem])
-        // Get unconverted bytes using Swift's internal encoding (currently UTF-8)
-        // (Can print individual bytes using indexer)
-        // Refer to https://swift.org/blog/utf8-string/
+        let sourceEncoding = String.Encoding(rawValue: CFStringConvertEncodingToNSStringEncoding(self.sourceEncodingDataSource.Encodings[SourceEncodingComboBox.indexOfSelectedItem]))
+        let targetEncoding = String.Encoding(rawValue: CFStringConvertEncodingToNSStringEncoding(self.targetEncodingDataSource.Encodings[TargetEncodingComboBox.indexOfSelectedItem]))
+        // Get bytes using source encoding
         let sourceTextData = SourceTextField.stringValue.data(using: sourceEncoding, allowLossyConversion: true)!
 
+        // Convert!
         ResultTextField.stringValue = String(data: sourceTextData, encoding: targetEncoding) ?? " "
     }
 
