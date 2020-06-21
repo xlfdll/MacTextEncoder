@@ -1,0 +1,84 @@
+
+/* Class = "NSMenuItem"; title = "Mac Text Encoder"; ObjectID = "1Xt-HY-uBw"; */
+"1Xt-HY-uBw.title" = "Mac文本编码器";
+
+/* Class = "NSTextFieldCell"; title = "Result Text"; ObjectID = "1tR-LY-Bmi"; */
+"1tR-LY-Bmi.title" = "结果";
+
+/* Class = "NSMenuItem"; title = "Edit"; ObjectID = "4I9-9d-C6F"; */
+"4I9-9d-C6F.title" = "编辑";
+
+/* Class = "NSMenuItem"; title = "Quit Mac Text Encoder"; ObjectID = "4sb-4s-VLi"; */
+"4sb-4s-VLi.title" = "退出Mac文本编码器";
+
+/* Class = "NSMenuItem"; title = "About Mac Text Encoder"; ObjectID = "5kV-Vb-QxS"; */
+"5kV-Vb-QxS.title" = "关于Mac文本编码器";
+
+/* Class = "NSMenuItem"; title = "Redo"; ObjectID = "6Ut-t6-vQX"; */
+"6Ut-t6-vQX.title" = "重做";
+
+/* Class = "NSMenu"; title = "Main Menu"; ObjectID = "AYu-sK-qS6"; */
+"AYu-sK-qS6.title" = "主菜单";
+
+/* Class = "NSComboBoxCell"; placeholderString = "Select an encoding to interpret source text"; ObjectID = "COy-3y-Lyv"; */
+"COy-3y-Lyv.placeholderString" = "选择一个编码以用来解释原始文本";
+
+/* Class = "NSTextFieldCell"; placeholderString = "Converted text will be shown here"; ObjectID = "FCT-rR-WmE"; */
+"FCT-rR-WmE.placeholderString" = "转换后的文本会显示在这里";
+
+/* Class = "NSWindow"; title = "Mac Text Encoder"; ObjectID = "IQv-IB-iLA"; */
+"IQv-IB-iLA.title" = "Mac文本编码器";
+
+/* Class = "NSMenuItem"; title = "Show All"; ObjectID = "Kd2-mp-pUS"; */
+"Kd2-mp-pUS.title" = "显示所有";
+
+/* Class = "NSMenuItem"; title = "Paste"; ObjectID = "Kdq-rB-qmy"; */
+"Kdq-rB-qmy.title" = "粘贴";
+
+/* Class = "NSTextFieldCell"; placeholderString = "Type text to be converted here"; ObjectID = "LMx-Re-6YY"; */
+"LMx-Re-6YY.placeholderString" = "在这里输入要被转换的文本";
+
+/* Class = "NSTextFieldCell"; title = "Source Text"; ObjectID = "MU4-S2-bml"; */
+"MU4-S2-bml.title" = "原始文本";
+
+/* Class = "NSMenuItem"; title = "Delete"; ObjectID = "N4f-vL-s9h"; */
+"N4f-vL-s9h.title" = "删除";
+
+/* Class = "NSMenuItem"; title = "Services"; ObjectID = "NMo-om-nkz"; */
+"NMo-om-nkz.title" = "服务";
+
+/* Class = "NSMenuItem"; title = "Copy"; ObjectID = "O4E-zt-zf1"; */
+"O4E-zt-zf1.title" = "复制";
+
+/* Class = "NSMenuItem"; title = "Hide Mac Text Encoder"; ObjectID = "Olw-nP-bQN"; */
+"Olw-nP-bQN.title" = "隐藏Mac文本编码器";
+
+/* Class = "NSMenuItem"; title = "Hide Others"; ObjectID = "Vdr-fp-XzO"; */
+"Vdr-fp-XzO.title" = "隐藏其它";
+
+/* Class = "NSMenuItem"; title = "Undo"; ObjectID = "VoX-1S-1mW"; */
+"VoX-1S-1mW.title" = "撤销";
+
+/* Class = "NSTextFieldCell"; title = "Target Encoding"; ObjectID = "Wym-0w-zvL"; */
+"Wym-0w-zvL.title" = "目标编码";
+
+/* Class = "NSMenuItem"; title = "Select All"; ObjectID = "aWI-5J-mF9"; */
+"aWI-5J-mF9.title" = "选择所有";
+
+/* Class = "NSComboBoxCell"; placeholderString = "Select an encoding to convert source text"; ObjectID = "b9g-Nk-zeP"; */
+"b9g-Nk-zeP.placeholderString" = "选择一个编码以用来转换原始文本";
+
+/* Class = "NSMenu"; title = "Services"; ObjectID = "hz9-B4-Xy5"; */
+"hz9-B4-Xy5.title" = "服务";
+
+/* Class = "NSTextFieldCell"; title = "Source Encoding"; ObjectID = "nac-0d-EqT"; */
+"nac-0d-EqT.title" = "原始编码";
+
+/* Class = "NSMenu"; title = "Mac Text Encoder"; ObjectID = "uQy-DD-JDr"; */
+"uQy-DD-JDr.title" = "Mac文本编码器";
+
+/* Class = "NSMenuItem"; title = "Cut"; ObjectID = "xKK-rv-4Ub"; */
+"xKK-rv-4Ub.title" = "剪切";
+
+/* Class = "NSMenu"; title = "Edit"; ObjectID = "yzs-xt-LXk"; */
+"yzs-xt-LXk.title" = "编辑";

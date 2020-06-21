@@ -1,0 +1,84 @@
+
+/* Class = "NSMenuItem"; title = "Mac Text Encoder"; ObjectID = "1Xt-HY-uBw"; */
+"1Xt-HY-uBw.title" = "Macテキストエンコーダー";
+
+/* Class = "NSTextFieldCell"; title = "Result Text"; ObjectID = "1tR-LY-Bmi"; */
+"1tR-LY-Bmi.title" = "結果";
+
+/* Class = "NSMenuItem"; title = "Edit"; ObjectID = "4I9-9d-C6F"; */
+"4I9-9d-C6F.title" = "編集";
+
+/* Class = "NSMenuItem"; title = "Quit Mac Text Encoder"; ObjectID = "4sb-4s-VLi"; */
+"4sb-4s-VLi.title" = "Macテキストエンコーダーを終了";
+
+/* Class = "NSMenuItem"; title = "About Mac Text Encoder"; ObjectID = "5kV-Vb-QxS"; */
+"5kV-Vb-QxS.title" = "Macテキストエンコーダーについて";
+
+/* Class = "NSMenuItem"; title = "Redo"; ObjectID = "6Ut-t6-vQX"; */
+"6Ut-t6-vQX.title" = "やり直す";
+
+/* Class = "NSMenu"; title = "Main Menu"; ObjectID = "AYu-sK-qS6"; */
+"AYu-sK-qS6.title" = "メインメニュー";
+
+/* Class = "NSComboBoxCell"; placeholderString = "Select an encoding to interpret source text"; ObjectID = "COy-3y-Lyv"; */
+"COy-3y-Lyv.placeholderString" = "テキスト解釈用エンコーディングを選択";
+
+/* Class = "NSTextFieldCell"; placeholderString = "Converted text will be shown here"; ObjectID = "FCT-rR-WmE"; */
+"FCT-rR-WmE.placeholderString" = "ここに転換したテキストを表示";
+
+/* Class = "NSWindow"; title = "Mac Text Encoder"; ObjectID = "IQv-IB-iLA"; */
+"IQv-IB-iLA.title" = "Macテキストエンコーダー";
+
+/* Class = "NSMenuItem"; title = "Show All"; ObjectID = "Kd2-mp-pUS"; */
+"Kd2-mp-pUS.title" = "すべてを表示";
+
+/* Class = "NSMenuItem"; title = "Paste"; ObjectID = "Kdq-rB-qmy"; */
+"Kdq-rB-qmy.title" = "ペースト";
+
+/* Class = "NSTextFieldCell"; placeholderString = "Type text to be converted here"; ObjectID = "LMx-Re-6YY"; */
+"LMx-Re-6YY.placeholderString" = "ここに転換するテキストを入力";
+
+/* Class = "NSTextFieldCell"; title = "Source Text"; ObjectID = "MU4-S2-bml"; */
+"MU4-S2-bml.title" = "ソース";
+
+/* Class = "NSMenuItem"; title = "Delete"; ObjectID = "N4f-vL-s9h"; */
+"N4f-vL-s9h.title" = "削除";
+
+/* Class = "NSMenuItem"; title = "Services"; ObjectID = "NMo-om-nkz"; */
+"NMo-om-nkz.title" = "サービス";
+
+/* Class = "NSMenuItem"; title = "Copy"; ObjectID = "O4E-zt-zf1"; */
+"O4E-zt-zf1.title" = "コピー";
+
+/* Class = "NSMenuItem"; title = "Hide Mac Text Encoder"; ObjectID = "Olw-nP-bQN"; */
+"Olw-nP-bQN.title" = "Macテキストエンコーダーを非表示";
+
+/* Class = "NSMenuItem"; title = "Hide Others"; ObjectID = "Vdr-fp-XzO"; */
+"Vdr-fp-XzO.title" = "ほかを非表示";
+
+/* Class = "NSMenuItem"; title = "Undo"; ObjectID = "VoX-1S-1mW"; */
+"VoX-1S-1mW.title" = "取り消す";
+
+/* Class = "NSTextFieldCell"; title = "Target Encoding"; ObjectID = "Wym-0w-zvL"; */
+"Wym-0w-zvL.title" = "目標エンコーディング";
+
+/* Class = "NSMenuItem"; title = "Select All"; ObjectID = "aWI-5J-mF9"; */
+"aWI-5J-mF9.title" = "すべてを選択";
+
+/* Class = "NSComboBoxCell"; placeholderString = "Select an encoding to convert source text"; ObjectID = "b9g-Nk-zeP"; */
+"b9g-Nk-zeP.placeholderString" = "ソーステキスト転換用エンコーディングを選択";
+
+/* Class = "NSMenu"; title = "Services"; ObjectID = "hz9-B4-Xy5"; */
+"hz9-B4-Xy5.title" = "サービス";
+
+/* Class = "NSTextFieldCell"; title = "Source Encoding"; ObjectID = "nac-0d-EqT"; */
+"nac-0d-EqT.title" = "ソースエンコーディング";
+
+/* Class = "NSMenu"; title = "Mac Text Encoder"; ObjectID = "uQy-DD-JDr"; */
+"uQy-DD-JDr.title" = "Macテキストエンコーダー";
+
+/* Class = "NSMenuItem"; title = "Cut"; ObjectID = "xKK-rv-4Ub"; */
+"xKK-rv-4Ub.title" = "カット";
+
+/* Class = "NSMenu"; title = "Edit"; ObjectID = "yzs-xt-LXk"; */
+"yzs-xt-LXk.title" = "編集";

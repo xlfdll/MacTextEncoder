@@ -1,0 +1,84 @@
+
+/* Class = "NSMenuItem"; title = "Mac Text Encoder"; ObjectID = "1Xt-HY-uBw"; */
+"1Xt-HY-uBw.title" = "Mac Text Encoder";
+
+/* Class = "NSTextFieldCell"; title = "Result Text"; ObjectID = "1tR-LY-Bmi"; */
+"1tR-LY-Bmi.title" = "Result Text";
+
+/* Class = "NSMenuItem"; title = "Edit"; ObjectID = "4I9-9d-C6F"; */
+"4I9-9d-C6F.title" = "Edit";
+
+/* Class = "NSMenuItem"; title = "Quit Mac Text Encoder"; ObjectID = "4sb-4s-VLi"; */
+"4sb-4s-VLi.title" = "Quit Mac Text Encoder";
+
+/* Class = "NSMenuItem"; title = "About Mac Text Encoder"; ObjectID = "5kV-Vb-QxS"; */
+"5kV-Vb-QxS.title" = "About Mac Text Encoder";
+
+/* Class = "NSMenuItem"; title = "Redo"; ObjectID = "6Ut-t6-vQX"; */
+"6Ut-t6-vQX.title" = "Redo";
+
+/* Class = "NSMenu"; title = "Main Menu"; ObjectID = "AYu-sK-qS6"; */
+"AYu-sK-qS6.title" = "Main Menu";
+
+/* Class = "NSComboBoxCell"; placeholderString = "Select an encoding to interpret source text"; ObjectID = "COy-3y-Lyv"; */
+"COy-3y-Lyv.placeholderString" = "Select an encoding to interpret source text";
+
+/* Class = "NSTextFieldCell"; placeholderString = "Converted text will be shown here"; ObjectID = "FCT-rR-WmE"; */
+"FCT-rR-WmE.placeholderString" = "Converted text will be shown here";
+
+/* Class = "NSWindow"; title = "Mac Text Encoder"; ObjectID = "IQv-IB-iLA"; */
+"IQv-IB-iLA.title" = "Mac Text Encoder";
+
+/* Class = "NSMenuItem"; title = "Show All"; ObjectID = "Kd2-mp-pUS"; */
+"Kd2-mp-pUS.title" = "Show All";
+
+/* Class = "NSMenuItem"; title = "Paste"; ObjectID = "Kdq-rB-qmy"; */
+"Kdq-rB-qmy.title" = "Paste";
+
+/* Class = "NSTextFieldCell"; placeholderString = "Type text to be converted here"; ObjectID = "LMx-Re-6YY"; */
+"LMx-Re-6YY.placeholderString" = "Type text to be converted here";
+
+/* Class = "NSTextFieldCell"; title = "Source Text"; ObjectID = "MU4-S2-bml"; */
+"MU4-S2-bml.title" = "Source Text";
+
+/* Class = "NSMenuItem"; title = "Delete"; ObjectID = "N4f-vL-s9h"; */
+"N4f-vL-s9h.title" = "Delete";
+
+/* Class = "NSMenuItem"; title = "Services"; ObjectID = "NMo-om-nkz"; */
+"NMo-om-nkz.title" = "Services";
+
+/* Class = "NSMenuItem"; title = "Copy"; ObjectID = "O4E-zt-zf1"; */
+"O4E-zt-zf1.title" = "Copy";
+
+/* Class = "NSMenuItem"; title = "Hide Mac Text Encoder"; ObjectID = "Olw-nP-bQN"; */
+"Olw-nP-bQN.title" = "Hide Mac Text Encoder";
+
+/* Class = "NSMenuItem"; title = "Hide Others"; ObjectID = "Vdr-fp-XzO"; */
+"Vdr-fp-XzO.title" = "Hide Others";
+
+/* Class = "NSMenuItem"; title = "Undo"; ObjectID = "VoX-1S-1mW"; */
+"VoX-1S-1mW.title" = "Undo";
+
+/* Class = "NSTextFieldCell"; title = "Target Encoding"; ObjectID = "Wym-0w-zvL"; */
+"Wym-0w-zvL.title" = "Target Encoding";
+
+/* Class = "NSMenuItem"; title = "Select All"; ObjectID = "aWI-5J-mF9"; */
+"aWI-5J-mF9.title" = "Select All";
+
+/* Class = "NSComboBoxCell"; placeholderString = "Select an encoding to convert source text"; ObjectID = "b9g-Nk-zeP"; */
+"b9g-Nk-zeP.placeholderString" = "Select an encoding to convert source text";
+
+/* Class = "NSMenu"; title = "Services"; ObjectID = "hz9-B4-Xy5"; */
+"hz9-B4-Xy5.title" = "Services";
+
+/* Class = "NSTextFieldCell"; title = "Source Encoding"; ObjectID = "nac-0d-EqT"; */
+"nac-0d-EqT.title" = "Source Encoding";
+
+/* Class = "NSMenu"; title = "Mac Text Encoder"; ObjectID = "uQy-DD-JDr"; */
+"uQy-DD-JDr.title" = "Mac Text Encoder";
+
+/* Class = "NSMenuItem"; title = "Cut"; ObjectID = "xKK-rv-4Ub"; */
+"xKK-rv-4Ub.title" = "Cut";
+
+/* Class = "NSMenu"; title = "Edit"; ObjectID = "yzs-xt-LXk"; */
+"yzs-xt-LXk.title" = "Edit";
